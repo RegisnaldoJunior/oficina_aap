@@ -1,7 +1,7 @@
 
 # 🚗 Oficina Manager Pro
 
-![Dashboard](image_49c1a0.png)
+![Dashboard](assets/images/dashboard.png)
 
 > Um sistema desktop completo para gerenciamento de oficinas mecânicas, focado em organização, controle de estoque e ordens de serviço.
 
@@ -26,24 +26,28 @@ O sistema é dividido em módulos integrados acessíveis através do Dashboard p
 ## 📷 Screenshots
 
 ### Dashboard e Visão Geral
-![Dashboard](image_49c1a0.png)
+[Dashboard](assets/images/dashboard.png)
 
 ### Agendamentos
 Visualize os compromissos do dia e futuros, com status de execução.
-![Agendamentos](image_49be98.png)
+![Agendamentos](assets/images/agendamentos.png)
 
 ### Controle de Estoque
 Gerencie peças, veja valores unitários e monitore quantidades mínimas.
-![Estoque](image_49be5c.png)
+![Estoque](assets/images/estoque.png)
 
 ### Gestão de Veículos e Clientes
 Mantenha o banco de dados da oficina organizado.
-![Veículos](image_49bed9.png)
-![Clientes](image_49bef7.png)
+![Veículos](assets/images/veiculos.png)
+![Clientes](assets/images/clientes.png)
+
+### Serviços
+Tabela de preços e serviços cadastrados.
+![Serviços](assets/images/servicos.png)
 
 ### Criação de Ordem de Serviço
 Interface unificada para lançar serviços e peças em um atendimento.
-![Nova OS](image_49be79.png)
+![Nova OS](assets/images/nova_os.png)
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -205,3 +209,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://www.goog
 Desenvolvido por [Regisnaldo Junior](https://www.google.com/search?q=https://github.com/RegisnaldoJunior)
 
 ```
+
