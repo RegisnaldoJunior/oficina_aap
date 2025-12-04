@@ -1,101 +1,131 @@
+🚗 Oficina Manager Pro
 
-# 🚗 Oficina Manager Pro
+(assets/images/dashboard.png)
 
-![Dashboard](assets/images/dashboard.png)
+Sistema desktop completo para gerenciamento de oficinas mecânicas, com foco em organização, produtividade e controle total das operações.
 
-> Um sistema desktop completo para gerenciamento de oficinas mecânicas, focado em organização, controle de estoque e ordens de serviço.
+📋 Sobre o Projeto
 
-## 📋 Sobre o Projeto
+O Oficina Manager Pro é uma aplicação desktop desenvolvida em Python com interface moderna em CustomTkinter (Dark Mode).
+O objetivo é auxiliar oficinas mecânicas a substituírem planilhas e anotações por um sistema simples, intuitivo e eficiente.
 
-O **Oficina Manager Pro** é uma aplicação desktop desenvolvida para auxiliar proprietários de oficinas mecânicas no controle diário de suas operações. Com uma interface moderna e escura (Dark Mode), o sistema facilita o gerenciamento de clientes, veículos, agendamentos e fluxo de caixa.
+✨ Funcionalidades
+🧭 Dashboard Interativo
 
-O objetivo é substituir planilhas complexas ou anotações em papel por um software intuitivo que centraliza todas as informações do negócio.
+Total de clientes, veículos e agendamentos
 
-## ✨ Funcionalidades
+Receita estimada do mês
 
-O sistema é dividido em módulos integrados acessíveis através do Dashboard principal:
+Acesso rápido para todos os módulos
 
-* **📊 Dashboard Interativo:** Visão geral rápida com total de clientes, veículos, agendamentos do dia e receita mensal.
-* **👥 Gestão de Clientes:** Cadastro, listagem e busca rápida de clientes (Nome, Telefone, Email).
-* **🚘 Gestão de Veículos:** Cadastro de carros vinculados aos clientes, incluindo placa, marca, modelo e ano.
-* **📅 Agendamentos:** Controle de agenda com visualização de status (Agendado, Em andamento) e filtro por datas.
-* **🔧 Catálogo de Serviços:** Lista de preços padronizada para serviços (Troca de óleo, Alinhamento, Freios, etc.).
-* **📦 Controle de Estoque:** Monitoramento de peças, quantidades, valores e alertas visuais de estoque baixo.
-* **📝 Ordem de Serviço (OS):** Criação de OS completa, selecionando veículo, adicionando múltiplos serviços e peças, com cálculo automático do valor total.
+👥 Gestão de Clientes
 
-## 📷 Screenshots
+Cadastro completo
 
-### Dashboard e Visão Geral
-[Dashboard](assets/images/dashboard.png)
+Busca rápida
 
-### Agendamentos
-Visualize os compromissos do dia e futuros, com status de execução.
-![Agendamentos](assets/images/agendamentos.png)
+Relacionamento com veículos
 
-### Controle de Estoque
-Gerencie peças, veja valores unitários e monitore quantidades mínimas.
-![Estoque](assets/images/estoque.png)
+🚘 Gestão de Veículos
 
-### Gestão de Veículos e Clientes
-Mantenha o banco de dados da oficina organizado.
-![Veículos](assets/images/veiculos.png)
-![Clientes](assets/images/clientes.png)
+Placa, marca, modelo e ano
 
-### Serviços
-Tabela de preços e serviços cadastrados.
-![Serviços](assets/images/servicos.png)
+Veículos vinculados ao cliente
 
-### Criação de Ordem de Serviço
-Interface unificada para lançar serviços e peças em um atendimento.
-![Nova OS](assets/images/nova_os.png)
+📅 Agendamentos
 
-## 🛠️ Tecnologias Utilizadas
+Visualização por data
 
-* **Linguagem:** Python 3.x
-* **Interface Gráfica (GUI):** CustomTkinter (Baseado nas imagens)
-* **Banco de Dados:** SQLite (Provável, para armazenamento local)
-* **Manipulação de Imagens:** Pillow (PIL)
+Status: Agendado, Em andamento, Concluído
 
-## 🚀 Como Executar
+Listagem e filtros
 
-### Pré-requisitos
+🔧 Catálogo de Serviços
 
-Certifique-se de ter o [Python](https://www.python.org/) instalado em sua máquina.
+Preços padronizados
 
-### Instalação
+Tabela detalhada de serviços
 
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/RegisnaldoJunior/oficina_aap.git](https://github.com/RegisnaldoJunior/oficina_aap.git)
-Entre na pasta do projeto:
+📦 Controle de Estoque
 
-Bash
+Quantidade mínima
 
+Alertas de estoque baixo
+
+Entrada e saída de itens
+
+📝 Ordem de Serviço (OS)
+
+Seleção de cliente / veículo
+
+Adição de serviços e peças
+
+Cálculo automático do valor final
+
+📷 Screenshots
+-Dashboard
+(assets/images/dashboard.png)
+
+-Agendamentos
+(assets/images/agendamentos.png)
+
+-Estoque
+(assets/images/estoque.png)
+
+-Veículos
+(assets/images/veiculos.png)
+
+-Clientes
+(assets/images/clientes.png)
+
+-Serviços
+(assets/images/servicos.png)
+
+-Nova OS
+(assets/images/nova_os.png)
+
+🛠️ Tecnologias Utilizadas
+
+Python 3.x
+
+CustomTkinter (Interface moderna)
+
+SQLite (Banco de dados local)
+
+Pillow (Manipulação de imagens)
+
+🚀 Como Executar o Projeto
+✔️ 1. Clonar o repositório
+git clone https://github.com/RegisnaldoJunior/oficina_aap.git
+
+✔️ 2. Acessar a pasta do projeto
 cd oficina_aap
-Instale as dependências (recomenda-se usar um ambiente virtual):
 
-Bash
+✔️ 3. Instalar dependências
+
+(Use ambiente virtual se desejar)
 
 pip install -r requirements.txt
-(Caso não tenha o arquivo requirements.txt, instale as bibliotecas principais manualmente, ex: pip install customtkinter pillow)
 
-Execute a aplicação:
 
-Bash
+Se não houver o arquivo:
 
+pip install customtkinter pillow
+
+✔️ 4. Executar a aplicação
 python main.py
-(Substitua main.py pelo nome do seu arquivo principal, caso seja diferente)
-
 
 📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-Desenvolvido por Regisnaldo Junior
+Este projeto está licenciado sob a MIT License.
+Consulte o arquivo LICENSE para mais informações.
 
+🤝 Contribuições
 
-Com certeza\! Com base nas imagens da interface (que sugerem fortemente o uso de Python com uma biblioteca de interface gráfica moderna, provavelmente **CustomTkinter**, devido ao visual "dark mode" e botões arredondados) e nas funcionalidades apresentadas, elaborei um `README.md` completo e profissional.
+Contribuições são sempre bem-vindas!
+Fique à vontade para abrir issues, enviar sugestões ou criar pull requests.
 
-Você pode copiar o código abaixo e criar o arquivo no seu repositório.
+👤 Autor
 
------
-
+Regisnaldo Junior
+Se quiser trocar uma ideia ou sugerir melhorias, estou à disposição!
