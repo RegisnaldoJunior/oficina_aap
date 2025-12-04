@@ -1,0 +1,89 @@
+<LoginScreen>:
+    FloatLayout:
+        canvas.before:
+            Color:
+                rgba: 0.1, 0.2, 0.4, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: 0.8, 0.6
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            spacing: 20
+            padding: 40
+            
+            Label:
+                text: 'OFICINA MANAGER PRO'
+                font_size: 32
+                bold: True
+                color: 1, 1, 1, 1
+                size_hint_y: None
+                height: 50
+            
+            BoxLayout:
+                orientation: 'vertical'
+                spacing: 15
+                size_hint_y: None
+                height: 200
+                
+                Label:
+                    text: 'Login'
+                    font_size: 24
+                    color: 1, 1, 1, 1
+                    size_hint_y: None
+                    height: 40
+                
+                TextInput:
+                    id: username_input
+                    hint_text: 'Usuário'
+                    multiline: False
+                    size_hint_y: None
+                    height: 50
+                    padding: [15, 15]
+                    background_color: 1, 1, 1, 0.8
+                
+                TextInput:
+                    id: password_input
+                    hint_text: 'Senha'
+                    multiline: False
+                    password: True
+                    size_hint_y: None
+                    height: 50
+                    padding: [15, 15]
+                    background_color: 1, 1, 1, 0.8
+                
+                Label:
+                    id: error_label
+                    text: ''
+                    color: 1, 0.3, 0.3, 1
+                    size_hint_y: None
+                    height: 30
+            
+            BoxLayout:
+                orientation: 'horizontal'
+                spacing: 20
+                size_hint_y: None
+                height: 50
+                
+                Button:
+                    text: 'ENTRAR'
+                    background_color: 0, 0.6, 0.3, 1
+                    color: 1, 1, 1, 1
+                    bold: True
+                    on_press: root.fazer_login()
+                
+                Button:
+                    text: 'LIMPAR'
+                    background_color: 0.8, 0.2, 0.2, 1
+                    color: 1, 1, 1, 1
+                    on_press: root.limpar_campos()
+            
+            Label:
+                text: 'Use: admin / admin'
+                font_size: 12
+                color: 1, 1, 1, 0.7
+                italic: True
+                size_hint_y: None
+                height: 30

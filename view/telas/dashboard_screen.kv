@@ -1,0 +1,215 @@
+<DashboardScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        
+        # Cabeçalho
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: 60
+            padding: [10, 0]
+            spacing: 10
+            
+            Label:
+                text: 'DASHBOARD'
+                font_size: 24
+                bold: True
+                color: 0.1, 0.1, 0.1, 1
+                size_hint_x: 0.6
+            
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint_x: 0.4
+                spacing: 20
+                
+                Label:
+                    id: data_label
+                    text: '00/00/0000'
+                    font_size: 16
+                    bold: True
+                
+                Label:
+                    id: hora_label
+                    text: '00:00:00'
+                    font_size: 16
+                    bold: True
+                
+                Button:
+                    text: 'Sair'
+                    size_hint_x: None
+                    width: 100
+                    background_color: 0.8, 0.2, 0.2, 1
+                    on_press: root.manager.current = 'login'
+        
+        # Conteúdo principal
+        GridLayout:
+            cols: 2
+            spacing: 20
+            padding: 20
+            
+            # Cartões de estatísticas
+            BoxLayout:
+                orientation: 'vertical'
+                canvas.before:
+                    Color:
+                        rgba: 0.2, 0.4, 0.8, 0.1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [10]
+                padding: 20
+                spacing: 10
+                
+                Label:
+                    text: 'CLIENTES'
+                    font_size: 14
+                    color: 0.2, 0.2, 0.2, 1
+                
+                Label:
+                    id: clientes_label
+                    text: '0'
+                    font_size: 36
+                    bold: True
+                    color: 0.1, 0.5, 0.8, 1
+                
+                Label:
+                    text: 'Cadastrados'
+                    font_size: 12
+                    color: 0.4, 0.4, 0.4, 1
+            
+            BoxLayout:
+                orientation: 'vertical'
+                canvas.before:
+                    Color:
+                        rgba: 0.2, 0.8, 0.4, 0.1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [10]
+                padding: 20
+                spacing: 10
+                
+                Label:
+                    text: 'VEÍCULOS'
+                    font_size: 14
+                    color: 0.2, 0.2, 0.2, 1
+                
+                Label:
+                    id: veiculos_label
+                    text: '0'
+                    font_size: 36
+                    bold: True
+                    color: 0.1, 0.7, 0.3, 1
+                
+                Label:
+                    text: 'Cadastrados'
+                    font_size: 12
+                    color: 0.4, 0.4, 0.4, 1
+            
+            BoxLayout:
+                orientation: 'vertical'
+                canvas.before:
+                    Color:
+                        rgba: 1, 0.6, 0.2, 0.1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [10]
+                padding: 20
+                spacing: 10
+                
+                Label:
+                    text: 'AGENDAMENTOS'
+                    font_size: 14
+                    color: 0.2, 0.2, 0.2, 1
+                
+                Label:
+                    id: agendamentos_label
+                    text: '0'
+                    font_size: 36
+                    bold: True
+                    color: 1, 0.5, 0, 1
+                
+                Label:
+                    text: 'Para hoje'
+                    font_size: 12
+                    color: 0.4, 0.4, 0.4, 1
+            
+            BoxLayout:
+                orientation: 'vertical'
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.2, 0.8, 0.1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [10]
+                padding: 20
+                spacing: 10
+                
+                Label:
+                    text: 'RECEITA'
+                    font_size: 14
+                    color: 0.2, 0.2, 0.2, 1
+                
+                Label:
+                    id: receita_label
+                    text: 'R$ 0,00'
+                    font_size: 36
+                    bold: True
+                    color: 0.7, 0.1, 0.7, 1
+                
+                Label:
+                    text: 'Mensal'
+                    font_size: 12
+                    color: 0.4, 0.4, 0.4, 1
+        
+        # Menu de navegação
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: 100
+            padding: 20
+            spacing: 15
+            
+            Button:
+                text: 'Clientes'
+                background_color: 0.2, 0.4, 0.8, 1
+                color: 1, 1, 1, 1
+                bold: True
+                on_press: root.navegar_para('clientes')
+            
+            Button:
+                text: 'Veículos'
+                background_color: 0.2, 0.6, 0.4, 1
+                color: 1, 1, 1, 1
+                bold: True
+                on_press: root.navegar_para('veiculos')
+            
+            Button:
+                text: 'Serviços'
+                background_color: 1, 0.5, 0, 1
+                color: 1, 1, 1, 1
+                bold: True
+                on_press: root.navegar_para('servicos')
+            
+            Button:
+                text: 'Agendamentos'
+                background_color: 0.7, 0.1, 0.7, 1
+                color: 1, 1, 1, 1
+                bold: True
+                on_press: root.navegar_para('agendamentos')
+
+            Button:
+                text: 'Ordem Serviço'
+                background_color: 0.5, 0.2, 0.8, 1
+                color: 1, 1, 1, 1
+                bold: True
+                on_press: root.navegar_para('ordem_servico')
+
+            Button:
+                text: 'Estoque'
+                background_color: 0.8, 0.4, 0.2, 1
+                color: 1, 1, 1, 1
+                bold: True
+                on_press: root.navegar_para('estoque')

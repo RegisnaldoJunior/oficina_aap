@@ -1,0 +1,41 @@
+<ServicosScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        
+        # Cabeçalho
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: 60
+            padding: [10, 0]
+            spacing: 10
+            
+            Button:
+                text: '← Voltar'
+                size_hint_x: None
+                width: 100
+                on_press: root.manager.current = 'dashboard'
+            
+            Label:
+                text: 'SERVIÇOS'
+                font_size: 24
+                bold: True
+                color: 0.1, 0.1, 0.1, 1
+                size_hint_x: 0.6
+            
+            Spinner:
+                id: categoria_spinner
+                text: 'Todas'
+                values: ['Todas', 'Preventiva', 'Mecânica', 'Elétrica', 'Pintura']
+                size_hint_x: 0.2
+                on_text: root.filtrar_por_categoria()
+        
+        # Lista de serviços
+        ScrollView:
+            GridLayout:
+                id: lista_servicos
+                cols: 1
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 2
+                padding: [10, 10]
