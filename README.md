@@ -1,6 +1,6 @@
 🚗 Oficina Manager Pro
 
-(assets/images/dashboard.png)
+![Dashboard](assets/images/dashboard.png)
 
 Sistema desktop completo para gerenciamento de oficinas mecânicas, com foco em organização, produtividade e controle total das operações.
 
@@ -64,26 +64,25 @@ Cálculo automático do valor final
 
 📷 Screenshots
 -Dashboard
-(assets/images/dashboard.png)
+![Dashboard](assets/images/dashboard.png)
 
 -Agendamentos
-(assets/images/agendamentos.png)
+![Agendamentos](assets/images/agendamentos.png)
 
 -Estoque
-(assets/images/estoque.png)
+![Estoque](assets/images/estoque.png)
 
 -Veículos
-(assets/images/veiculos.png)
+![Veículos](assets/images/veiculos.png)
 
 -Clientes
-(assets/images/clientes.png)
+![Clientes](assets/images/clientes.png)
 
 -Serviços
-(assets/images/servicos.png)
+![Serviços](assets/images/servicos.png)
 
 -Nova OS
-(assets/images/nova_os.png)
-
+![Nova OS](assets/images/nova_os.png)
 🛠️ Tecnologias Utilizadas
 
 Python 3.x
@@ -129,3 +128,4 @@ Fique à vontade para abrir issues, enviar sugestões ou criar pull requests.
 
 Regisnaldo Junior
 Se quiser trocar uma ideia ou sugerir melhorias, estou à disposição!
+
