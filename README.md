@@ -127,7 +127,9 @@ Fique à vontade para abrir issues, enviar sugestões ou criar pull requests.
 
 👤 Autor
 
-Regisnaldo Junior
+Reginaldo Junior
+
 Se quiser trocar uma ideia ou sugerir melhorias, estou à disposição!
+
 
 
