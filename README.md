@@ -94,6 +94,7 @@ SQLite (Banco de dados local)
 Pillow (Manipulação de imagens)
 
 🚀 Como Executar o Projeto
+
 ✔️ 1. Clonar o repositório
 git clone https://github.com/RegisnaldoJunior/oficina_aap.git
 
@@ -128,4 +129,5 @@ Fique à vontade para abrir issues, enviar sugestões ou criar pull requests.
 
 Regisnaldo Junior
 Se quiser trocar uma ideia ou sugerir melhorias, estou à disposição!
+
 
