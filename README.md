@@ -63,29 +63,29 @@ Adição de serviços e peças
 Cálculo automático do valor final
 
 📷 Screenshots
--Dashboard
+Dashboard
 ![Dashboard](assets/images/dashboard.png)
 
--Agendamentos
+Agendamentos
 ![Agendamentos](assets/images/agendamentos.png)
 
--Estoque
+Estoque
 ![Estoque](assets/images/estoque.png)
 
--Veículos
+Veículos
 ![Veículos](assets/images/veiculos.png)
 
--Clientes
+Clientes
 ![Clientes](assets/images/clientes.png)
 
--Serviços
+Serviços
 ![Serviços](assets/images/servicos.png)
 
--Nova OS
+Nova OS
 ![Nova OS](assets/images/nova_os.png)
 🛠️ Tecnologias Utilizadas
 
-Python 3.x
+Python 3.10.11
 
 CustomTkinter (Interface moderna)
 
@@ -130,6 +130,7 @@ Fique à vontade para abrir issues, enviar sugestões ou criar pull requests.
 Reginaldo Junior
 
 Se quiser trocar uma ideia ou sugerir melhorias, estou à disposição!
+
 
 
 
